@@ -1,16 +1,20 @@
-
 body {
-  background: #111216;
+  background-color: black
+;
+  color: #111216;
   margin-top: 0%;
-}
-body {
   font-family: bernino,-apple-system,BlinkMacSystemFont,segoe ui,Roboto,helvetica neue,Arial,sans-serif,apple color emoji,segoe ui emoji,segoe ui symbol,noto color emoji;
   font-size: 13px;
   font-weight: 400;
-}
-
-body, html {
   min-height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+} 
+html {
+  min-height: 100%;
+  background: #111216;
 }
 
 /* tout le boloc + le bandeau*/
@@ -21,7 +25,6 @@ body, html {
   min-height: 0;
   width: 100%;
   height: auto;
-  margin: 0 auto;
   border: 1px solid #ff0000;
 
   border-top: 0;
@@ -34,6 +37,27 @@ body, html {
   border-bottom: 1px solid red;
 }
 
+.imageBox img {
+  width: 40px;
+  margin-top: 18px;
+  margin-left: 10px;
+}
+
+.imageBox {
+  position: relative;
+  float: left;
+}
+
+.imageBox .hoverImg {
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: none;
+}
+
+.imageBox:hover .hoverImg {
+  display: block;
+}
 
 *,
 ::after,
@@ -253,8 +277,8 @@ html [type="button"] {
   font-size: 14px;
 }
 ::selection {
-  background-color: #cce2ff;
-  color: rgba(0, 0, 0, 0.87);
+  background-color: #043679;
+  color: rgba(187, 29, 29, 0.87);
 }
 
 #header #header-middle #search #search-results {
